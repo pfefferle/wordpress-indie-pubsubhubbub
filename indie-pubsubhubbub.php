@@ -14,11 +14,10 @@ Version: 1.0.0
  * @param array $feeds
  * @return array
  */
-function indie_push($feeds)
-{
-    $feeds[] = site_url("/");
-    $feeds[] = site_url();
+function indie_push( $feeds ) {
+	$feeds[] = site_url( '/' );
+	$feeds[] = site_url();
 
-    return array_unique($feeds);
+	return array_unique( $feeds );
 }
-add_filter('pshb_feed_urls', 'indie_push');
+add_filter( 'pshb_feed_urls', 'indie_push' );
