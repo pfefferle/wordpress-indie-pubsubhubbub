@@ -1,0 +1,19 @@
+{
+    "name": "pfefferle/wordpress-indie-pubsubhubbub",
+    "description": "Pushes the (microformatted) main blog URL via PubSubHubbub",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthias Pfefferle",
+            "homepage": "http://notizblog.org"
+        }
+    ],
+    "extra": {
+        "installer-name": "indie-pubsubhubbub"
+    },
+    "require": {
+        "php": ">=5.6.0",
+        "composer/installers": "~1.0"
+    }
+}
